@@ -1,0 +1,301 @@
+body{
+	margin: 40px 0 0 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+#header{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background: url('../img/header_bg.png');
+}
+
+#header_main{
+	width:1100px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+#header_main h1{
+	font-size:20px;
+	font-family:宋体;
+	width: 40px;
+	height:40px;
+	line-height:40px;
+	margin:0;
+	padding: 0 10px;
+	color: #666;
+	float: left;
+	
+}
+#header_main .header_search{
+	float: left;
+	margin:0;
+	padding: 6px 0 0 0;
+	
+}
+
+#header_main .header_search .search{
+	width: 300px;	
+	height: 24px;
+	background: #fff;
+	font-size:14px;
+	color: #666;
+	border: 1px solid #ccc;
+}
+
+#header_main .header_button{
+	padding: 5px;
+	float: left;
+}
+
+#header_main .header_member{
+	float:right;
+	height: 40px;
+	line-height: 40px;
+}
+
+
+#header_main .header_member a{
+	font-size: 14px;
+	text-decoration: none;
+	color:#555555;
+}
+
+#reg, #login,#ques{
+	padding:15px 0 0 15px;
+}
+
+#reg p, #login p, #ques p{
+	margin: 10px 0;
+	padding: 0;
+}
+
+#reg p label, #login p label, #ques p label{
+	font-size: 14px;
+	color: #666;
+}
+
+#reg p .text, #login p .text, #ques p .text{
+	width: 200px;
+	height: 25px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #666;
+	text-indent: 5px;
+}
+
+#reg p .star, #login p .star, #ques p .star{
+
+	color:maroon;
+	font-size: 14px;
+}
+
+#reg p .succ, #login p .succ{
+	width:14px;
+	height: 14px;
+	display: inline-block;
+	background: url(../img/reg_succ.png) no-repeat;
+}
+
+#reg ol, #login ol{
+	margin:0;
+	padding:0 0 0 20px;
+	color:maroon;
+}
+
+#reg ol li, #login ol li{
+	height: 20px;
+}
+
+#expires{
+	position: relative;
+	top: 2px;
+	margin: 0 2px 0 125px;
+}
+
+.valid{
+	background: url('../img/reg_succ.png') no-repeat right;
+}
+
+#main{
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+}
+
+#main .main_left{
+	width: 580px;
+	float: left;
+}
+
+#main .main_right{
+	width: 200px;
+	float: right;
+}
+
+#tabs.ui-tabs{
+	
+}
+
+#tabs.ui-widget-content{
+	border: none;
+}
+
+#tabs .ui-tabs-panel{
+	position: relative;
+	border: 1px solid #aaaaaa;
+	border-top: none;
+	top: -2px;
+}
+
+#accordion h1.ui-state-default{
+	background: url(../img/ui_header_bg.png);
+}
+
+#content h4{
+	color: #666;
+	font-weight: normal;
+}
+
+#content h3{
+	color: #369;
+}
+
+#content .editor{
+	color: #333;
+	line-height: 180%;
+	overflow: hidden;
+}
+
+#content .bottom{
+	padding: 5px 0 0 0;
+}
+
+#content .bottom .up{
+	float: right;
+	color: #369;
+	cursor: pointer;
+}
+
+#content .editor .down{
+	color: #369;
+	cursor: pointer;
+}
+
+#content .bottom .comment{
+	color: #369;
+	cursor: pointer;
+}
+
+#content .comment_list{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px 10px;
+	display: none;
+}
+
+#content .comment_list dl{
+	margin: 0;
+	padding: 3px 0 5px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#content .comment_list dl dt{
+	margin: 0;
+	padding: 5px 0 0 0;
+	color: #369;
+}
+
+#content .comment_list dl dd{
+	margin: 0;
+	padding: 0;
+	line-height: 180%;
+	color: #333;
+}
+
+#content .comment_list dl dd.date{
+	color: #999;
+}
+
+#content .comment_add .text textarea{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: none;
+	width: 98%;
+	color: #666;
+	margin: 0 0 5px 0;
+	padding: 5px;
+	font-size: 12px;
+}
+
+#content .comment_list .comment_loading dd{
+	background: url(../img/comment_load.gif) no-repeat 75px center;
+}
+
+#content .comment_list .load_more{
+	width: 95%;
+	margin: 10px 0 0 0;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+
+}
+
+#content .comment_add dd{
+	text-align: right;
+}
+
+#content .comment_add dd input{
+	cursor: pointer;
+}
+
+
+#loading{
+	background:url(../img/loading.gif) no-repeat 20px center;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: bold;
+	text-indent: 40px;
+	margin:0;
+	color:#666;
+}
+
+#error{
+	background:url(../img/error.png) no-repeat 20px center;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: bold;
+	text-indent: 40px;
+	margin:0;
+	color:#666;
+}
+/*
+.abc{
+	color: red;
+}
+
+*/
+
+/*
+.ui-datepicker-today .ui-state-highlight{
+	color:red;
+}
+
+.ui-widget-header{
+	background: url(../img/ui_header_bg.png);
+}
+
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background: url('../img/ui_header_bg.png'); 
+}
+
+/*
+
+*/
+

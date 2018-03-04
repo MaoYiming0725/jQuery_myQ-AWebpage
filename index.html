@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>知问前端</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="uEditor/uEditor.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="uEditor/uEditor.css" type="text/css" />
+<link rel="stylesheet" href="uEditor/uEditorContent.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/smoothness1.12/jquery-ui.css" type="text/css" />
+<style>
+    .ui-tooltip{
+		color:#666;
+		width:160px;
+		height: 20px; 
+	}
+
+	.custom-autocomplete{
+		border-radius: 4px;
+	}
+
+	.custom-header{
+		color:red;
+	}
+	/*
+	.a{
+		color:red;
+		opacity: 1;
+	}
+	*/
+	.ui-button{
+	background: url('img/ui_header_bg.png');
+}
+
+	.ui-widget-header{
+		background: url(img/ui_header_bg.png);
+	}
+
+	.ui-datepicker-today .ui-state-highlight{
+		border: 1px solid #eee;
+		color:#f60;
+	}
+
+	.ui-datepicker-current-day .ui-state-active{
+		border:1px solid #eee;
+		color:#06f;
+	}
+
+
+
+
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="header_main">
+			<h1>知问</h1>
+			<div class="header_search">
+				<input type="text" class="search" />
+			</div>
+			<div class="header_button">
+				<button id="search_button">查询</button>
+			</div>
+			<div class="header_button">
+				<button id="ques_button">提问</button>
+			</div>
+			<div class="header_member">
+				<a href="javascript:void(0)" id="reg_a">注册</a>
+				<a href="javascript:void(0)" id="member">用户</a> 
+				| 
+				<a href="javascript:void(0)" id="logout">退出</a> 
+				<a href="javascript:void(0)" id="log_a">登录</a>
+				
+			</div>
+		</div>
+	</div>
+	
+	<form id="reg" title="会员注册">
+	    <ol id="reg_errors"></ol>
+		<p>
+			<label for="user">帐号：</label>
+			<input type="text" name="user" id="user" class="text" title="请输入帐号，不小于2位！" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="pass">密码：</label>
+			<input type="password" name="pass" id="pass" class="text" title="请输入密码，不小于6位！"></input>
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="email">邮箱：</label>
+			<input type="text" name="email" id="email" class="text" title="请输入电子邮箱!	"></input>
+			<span class="star">*</span>
+		</p>
+		<p class="sex">
+			<label title="sex">性别：</label>
+			<input type="radio" name="sex" value="male" id="male"><label for="male">男</label></input><input type="radio" name="sex" value="female" id="female"><label for="female">女</label></input>
+		</p>
+		<p>
+			<label for="birth">生日：</label>
+			<input type="text" name="birth" id="birth" class="text" readonly="readonly"></input>
+		</p>
+	</form>
+	<form id="login" title="会员登录">
+	    <ol id="login_errors"></ol>
+		<p>
+			<label for="user">帐号：</label>
+			<input type="text" name="login_user" id="login_user" class="text" title="请输入帐号，不小于2位！" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="pass">密码：</label>
+			<input type="password" name="login_pass" id="login_pass" class="text" title="请输入密码，不小于6位！"></input>
+			<span class="star">*</span>
+		</p>
+		<p>
+			<input type="checkbox" name="expires" id="expires" checked="checked" />
+			<label>登录后有效期一周</label>
+		</p>
+	</form>
+	<form id="ques" title="提问">
+		<p>
+			<label for="ques_title">问题名称：</label>
+			<input type="text" name="ques_title" id="ques_title" class="text" style="width:390px;"/>
+			<span class="star">*</span>
+		</p>
+		<p>
+			<textarea class="uEditorCustom" name="content" id="content">问题描述</textarea>
+		</p>
+	</form>
+
+	<div id="main">
+		<div id="tabs" class="main_left">
+			<ul>
+				<li><a href="tab1.html">tab1</a></li>
+				<li><a href="tab2.html">tab2</a></li>
+				<li><a href="tab3.html">tab3</a></li>
+			</ul>
+		</div>
+		<div id="content" class="main_left"></div>
+		<div id="accordion" class="main_right">
+			<h1>菜单1</h1>
+			<div>内容1</div>
+			<h1>菜单2</h1>
+			<div>内容2</div>
+			<h1>菜单3</h1>
+			<div>内容3</div>
+		</div>
+	</div>
+
+	<p id="loading">数据交互中...</p>
+	<p id="error">请登录后操作...</p>
+
+
+
+</body>
+<script>
+</script>
